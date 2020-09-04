@@ -128,7 +128,7 @@ public class WordDictionary {
             return;
         }
         try {
-            BufferedReader br = new BufferedReader(new InputStreamReader(is));
+            BufferedReader br = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
             long s = System.currentTimeMillis();
             int count = 0;
             while (br.ready()) {
